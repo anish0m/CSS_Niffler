@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +14,7 @@
 </head>
 
 <body>
+
     <section id="view">
         <div id="container">
             <div id="overlay">
@@ -45,24 +50,32 @@
 
             </div>
 
-       
-                <div id="coins">
+
+            <div id="coins">
                 <div class="coin">
-                
+                    <div id="coinBG"></div>
                 </div>
+            </div>
+
+            <div id="nifflers">
+                <div id="niffler">
+                    <div id="nifflerBG">
+
+                    </div>
                 </div>
+            </div>
 
-                <div id="nifflers">
-<div class="niffler">
-    <div id="nifflerBG">
 
-    </div>
-</div>
-                </div>
-
-        
         </div>
     </section>
+
+<form method="get" action="grid-levels.php">
+    <input type="submit" value="level1" name="level1">
+    <input type="submit" value="level2" name="level2">
+    <input type="submit" value="level3" name="level3">
+    </form>
+
+
 </body>
 
 </html>
