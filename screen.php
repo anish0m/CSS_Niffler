@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="screeen.css">
     <title>CSS Nifffler</title>
 </head>
 
@@ -52,7 +52,7 @@
 
 
             <div id="coins">
-                <div class="coin">
+                <div id="coin">
                     <div id="coinBG"></div>
                 </div>
             </div>
@@ -69,11 +69,20 @@
         </div>
     </section>
 
-<form method="get" action="grid-levels.php">
-    <input type="submit" value="level1" name="level1">
-    <input type="submit" value="level2" name="level2">
-    <input type="submit" value="level3" name="level3">
-    </form>
+<div class="dropdown">
+    <span>Levels</span>
+    <div class="dropdown-content">
+        <form method="get" action="grid-levels.php">
+        <input type="submit" value="level1" name="level1">
+        <input type="submit" value="level2" name="level2">
+        <input type="submit" value="level3" name="level3">
+        </form>
+    </div>
+</div>
+
+<br><br><br>
+
+ 
 
 
 </body>

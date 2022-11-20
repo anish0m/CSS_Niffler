@@ -2,7 +2,7 @@
 include_once('screen.php');
 function gridLevel1()
 {
-    echo '<section id="level1">
+    echo '<section id="level">
         <div>
             <form action="userInput.php" method="get" name="inputtake">
                 <label>.coins{</label><br>
@@ -23,7 +23,7 @@ function gridLevel1()
 
 function gridLevel2()
 {
-    echo '<section id="level1">
+    echo '<section id="level">
         <div>
             <form action="userInput.php" method="get" name="inputtake">
                 <label>.coins{</label><br>
@@ -44,7 +44,7 @@ function gridLevel2()
 
 function gridLevel3()
 {
-    echo '<section id="level1">
+    echo '<section id="level">
         <div>
             <form action="userInput.php" method="get" name="inputtake">
                 <label>.coins{</label><br>
@@ -62,6 +62,7 @@ function gridLevel3()
         </div>
     </section>';
 }
+
 
 if(isset($_GET['level1']))
 {
