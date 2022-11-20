@@ -9,10 +9,10 @@ function gridLevel1()
                 <label>grid-column-start : 2;</label><br>
                 <label>grid-column-end : 5;</label><br>
                 <label> grid-row-start:
-                    <input type="text" name="r_start1">
+                    <input type="text" name="r_start">
                 </label><br>
                 <label>
-                    grid-row-end : <input type="text" name="r_end1"></label><br>
+                    grid-row-end : <input type="text" name="r_end"></label><br>
 
                 <label>}</label><br>
                 <input type="submit" name="submit1">
@@ -30,10 +30,10 @@ function gridLevel2()
                 <label>grid-column-start : 3;</label><br>
                 <label>grid-column-end : 5;</label><br>
                 <label> grid-row-start:
-                    <input type="text" name="r_start2">
+                    <input type="text" name="r_start">
                 </label><br>
                 <label>
-                    grid-row-end : <input type="text" name="r_end2"></label><br>
+                    grid-row-end : <input type="text" name="r_end"></label><br>
 
                 <label>}</label><br>
                 <input type="submit" name="submit2">
@@ -51,10 +51,10 @@ function gridLevel3()
                 <label>grid-column-start : 4;</label><br>
                 <label>grid-column-end : 3;</label><br>
                 <label> grid-row-start:
-                    <input type="text" name="r_start3">
+                    <input type="text" name="r_start">
                 </label><br>
                 <label>
-                    grid-row-end : <input type="text" name="r_end3"></label><br>
+                    grid-row-end : <input type="text" name="r_end"></label><br>
 
                 <label>}</label><br>
                 <input type="submit" name="submit3">
