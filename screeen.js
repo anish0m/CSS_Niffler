@@ -13,24 +13,36 @@ function nifflerPosition(rowStart,columnStart,rowEnd,columnEnd)
 
 }+"'"
 
-function coinPosition(rowStart,columnStart,rowEnd,columnEnd)
+function coinPosition(rowStart,rowEnd,columnStart,columnEnd)
 {
     console.log(lvl);
     console.log(columnStart,columnEnd, rowStart, rowEnd);
-    coin.style.gridColumnStart=columnStart;
-    coin.style.gridColumnEnd=columnEnd;
     coin.style.gridRowStart=rowStart;
     coin.style.gridRowEnd=rowEnd;
+
+    if(arguments.length==4)
+    {coin.style.gridColumnStart=columnStart;
+    coin.style.gridColumnEnd=columnEnd;}
+
+    console.log("Kire");
+
+  
 
 }+"'"
 
 function check(rowStart,rowEnd,btnName,next)
 {
-    if(document.getElementById('r_start').value== rowStart && document.getElementById('r_end').value==rowEnd)
+    const start=document.getElementById('r_start').value;
+    const end = document.getElementById('r_end').value;
+    console.log("pi?");
+
+    coinPosition(start,end);
+    
+    if(start== rowStart && end==rowEnd)
     {
-        console.log("Hello" + btnName);
         document.getElementById(btnName).style.display="block";
         document.getElementById(next).style.display="inline-block";
+
     }
     else
     console.log("wrong");
@@ -43,7 +55,7 @@ console.log("Level =" + lvl);
 if(lvl==1)
 {
     nifflerPosition(1,3,5,4);
-    coinPosition(1,3,1,4);
+    coinPosition(1,1,3,4);
 
     document.getElementById('codingArea').onmouseover=function(){
         check(1,5,'nextLevel1','level2');
@@ -52,7 +64,7 @@ if(lvl==1)
 else if(lvl==2)
 {
     nifflerPosition(2,2,4,5);
-    coinPosition(1,2,1,5);
+    coinPosition(1,1,2,5);
 
     document.getElementById('codingArea').onmouseover=function(){
         check(2,4,'nextLevel2','level3');
