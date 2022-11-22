@@ -101,3 +101,10 @@ img {
   .dropdown:hover  .dropdown-content {
     display: block;
   }
+
+/* .levelNo{
+    display : none;
+}  */
+#level1{
+    display : inline-block;
+}
