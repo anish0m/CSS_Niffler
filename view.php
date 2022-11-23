@@ -12,16 +12,19 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+echo "<div style='display : flex; justify-content : flex-end'>User ID : 1<br>";
 
 $sql= "SELECT Level FROM Progress WHERE UserID = '1' AND Topic='Grid'";
 $result = $conn->query($sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
+    
     echo "Max Level : ";
     echo $row['Level'];
     $lvl = $row['Level'];
 }
+echo '</div>';
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +34,7 @@ while ($row = mysqli_fetch_assoc($result))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>CSS Nifffler</title>
 </head>
 
@@ -105,14 +108,14 @@ while ($row = mysqli_fetch_assoc($result))
 <br><br><br>
 
  <script>
+    
 var maxLvl = <?php echo json_encode($lvl)?>;
-for(i=maxLvl-1;i<=3;i++)
+for(i=maxLvl;i<=3;i++)
 {
-    console.log("hello"+"'"+"level"+i+"'");
-    const lvlName='"'+"level"+i+'"';
+    const lv="level"+i;
+    document.getElementById(lv).style.display="none";
 
-    console.log("Mew"+lvlName);
-    // document.getElementById(lvlName).style.display="none";
+     
 }
     </script>
 

@@ -24,9 +24,6 @@ function coinPosition(rowStart,rowEnd,columnStart,columnEnd)
     {coin.style.gridColumnStart=columnStart;
     coin.style.gridColumnEnd=columnEnd;}
 
-    console.log("Kire");
-
-  
 
 }+"'"
 
@@ -34,15 +31,14 @@ function check(rowStart,rowEnd,btnName,next)
 {
     const start=document.getElementById('r_start').value;
     const end = document.getElementById('r_end').value;
-    console.log("pi?");
 
     coinPosition(start,end);
-    
     if(start== rowStart && end==rowEnd)
     {
         document.getElementById(btnName).style.display="block";
         document.getElementById(next).style.display="inline-block";
 
+        // location.href="updateTable.php";
     }
     else
     console.log("wrong");
@@ -80,4 +76,3 @@ if(lvl==3)
         check(3,4,'nextLevel3');
     }
 }
-

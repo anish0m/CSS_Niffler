@@ -1,5 +1,5 @@
 <?php
-include_once('screen.php');
+include_once('view.php');
 ?>
 
 <?php
@@ -70,18 +70,18 @@ function gridLevel3()
 if(isset($_GET['level1']))
 {
     gridLevel1();
-      echo '<script id="currentLevel" src="screeen.js" lvl="1"></script>';
+      echo '<script id="currentLevel" src="view.js" lvl="1"></script>';
 }
 
 elseif(isset($_GET['level2']))
 {
     gridLevel2();
-    echo '<script id="currentLevel" src="screeen.js" lvl="2"></script>';
+    echo '<script id="currentLevel" src="view.js" lvl="2"></script>';
 }
 elseif(isset($_GET['level3']))
 {
     gridLevel3();
-    echo '<script id="currentLevel" src="screeen.js" lvl="3"></script>';
+    echo '<script id="currentLevel" src="view.js" lvl="3"></script>';
 }
 
 ?>
